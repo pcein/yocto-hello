@@ -2,12 +2,7 @@
 
 pipeline {
     
-    agent {
-       node {
-            label 'my-defined-label'
-            customWorkspace '/home/recursive/jenkins/tmp'
-       }
-    }   
+    agent any
 
     stages {
         stage('Build') {
